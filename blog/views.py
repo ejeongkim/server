@@ -15,4 +15,4 @@ def m_admin_test(request):
         if adminList.__contains__(msg_):
             return HttpResponse('"success"')
         else:
-           return HttpResponse('fail')
+           return HttpResponse('"fail"')
