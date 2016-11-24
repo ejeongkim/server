@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect, HttpResponse
 from django.views.decorators.csrf import csrf_exempt
+import json
 
 # Create your views here.
 @csrf_exempt
@@ -12,6 +13,6 @@ def m_admin_test(request):
         msg_  = request.POST['msg']
 
         if adminList.__contains__(msg_):
-            return HttpResponse('success')
+            return HttpResponse('"success"')
         else:
            return HttpResponse('fail')
