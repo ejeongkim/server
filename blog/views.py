@@ -7,5 +7,6 @@ import json
 @csrf_exempt
 def m_admin_test(request):
     if request.method == 'POST':
-    	data = {'foo': 'bar', 'hello': 'world'}
-    	return HttpResponse(json.dumps(data), content_type='application/json')
+    	#data = {'foo': 'bar', 'hello': 'world'}
+    	#return HttpResponse(json.dumps(data), content_type='application/json')
+    	return HttpResponse('ejeongkimzhfflsvjtm1!')
