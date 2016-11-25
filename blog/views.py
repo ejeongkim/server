@@ -15,7 +15,7 @@ def m_admin_test(request):
 		# 	{"firstName":"Anna", "lastName":"Smith"},
 		# 	{"firstName":"Peter", "lastName":"Jones"}]})
 		#return HttpResponse(json.dumps(data), content_type='application/json')
-		msg_  = request.POST['msg']
+		msg_ = request.POST['msg']
 		if adminList.__contains__(msg_):
 			return HttpResponse('success')
 		else:
