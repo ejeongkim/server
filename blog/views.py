@@ -8,7 +8,7 @@ import json
 @csrf_exempt
 def m_admin_test(request):
 	adminList = ["hi","admin1@com", "admin2@com", "admin3@com", "admin4@com", "admin5@com", "admin6@com", "admin7@com", "admin8@com", "admin9@com", "admin10@com", "admin11@com", "admin12@com", "admin13@com"]
-    if request.method == 'POST':
+	if request.method == 'POST':
 		# data = {'foo': 'bar', 'hello': 'world', 'ejeong': 'ejeongkim1!'}
 		# return JsonResponse({"employees":[
 		# 	{"firstName":"John", "lastName":"Doe"},
